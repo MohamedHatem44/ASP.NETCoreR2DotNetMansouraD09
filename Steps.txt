@@ -1,0 +1,29 @@
+// DAL - Data Access Layer
+1- Create 3 Projects (MVC - WebApp, ClassLibrary BLL, ClassLibrary DAL)
+2- Create Folder Data (Models - Context - Configuration) in DAL Project
+3- Create Folder Repositories in DAL Project
+4- Install Entity Framework Core in DAL Project
+5- Create Models in Models Folder
+6- Create Context Class in Context Folder
+7- Create Configuration Class in Configuration Folder
+8- Create Repository Classes in Repositories Folder (Generic - Non generic)
+9- Create UnitOfWork in DAL Project
+10- Create Migrations and Update Database
+11- Create Class AddDALServices in DAL Project and Add Services for Dependency Injection
+15- Run Migartion DAL Project
+16- Interface IAuditableEntity
+17- OverRide SaveChanges in Context Class to Set Auditing Properties
+
+// BLL - Business Logic Layer
+1- Create Folder Managers in BLL Project
+2- Create Manager Classes, Interfaces in Managers Folder
+3- Create ViewModels in BLL Project
+4- Create Class AddBLLServices in BLL Project and Add Services for Dependency Injection
+5- Inject UnitOfWork in Managers and Implement Methods
+
+// MVC - WebApp
+1- Create Controllers in Controllers Folder
+2- Create Views in Views Folder
+3- Install Design Package in MVC
+4- Add Services for Dependency Injection in Program.cs (AddBLLServices, AddDALServices)
+5- Inject Managers in Controllers and Implement Actions
